@@ -16,7 +16,7 @@ lxml==4.3.0               # via pykeepass
 pbr==5.1.1
 pycparser==2.19           # via cffi
 pycryptodome==3.7.3       # via pykeepass
-pykeepass==3.0.3
+pykeepass==3.1.0
 python-dateutil==2.7.5    # via pykeepass
 requests==2.21.0          # via hvac
 sh==1.12.14

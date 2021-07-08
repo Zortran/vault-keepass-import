@@ -138,7 +138,10 @@ class Importer(object):
         entry = {}
         for k in ('username', 'password', 'url', 'notes', 'tags', 'icon', 'uuid'):
             if getattr(e, k):
-                entry[k] = getattr(e, k)
+                if k != 'uuid':
+                    entry[k] = getattr(e, k)
+                else:
+                    entry[k] = str(getattr(e, k))
         custom_properties = e.custom_properties
         entry.update(custom_properties)
         if e.expires:
